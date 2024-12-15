@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturar Localização</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Localização</h1>
+        <form id="form-localizacao">
+            <label for="protocolo">Número do Protocolo:</label>
+            <input type="text" id="protocolo" name="protocolo" required><br><br>
+
+            <label for="localizacao">Localização (Lat, Long):</label>
+            <input type="text" id="localizacao" name="localizacao" readonly><br><br>
+
+            <button type="button" onclick="capturarLocalizacao()">Capturar Localização</button>
+            <button type="button" onclick="enviarDados()">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
